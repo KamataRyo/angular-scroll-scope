@@ -6,7 +6,8 @@ path    = require 'path'
 coffee  = require 'gulp-coffee'
 uglify  = require 'gulp-uglify'
 #test
-connect = require 'gulp-connect'
+sourcemaps   = require 'gulp-sourcemaps'
+connect      = require 'gulp-connect'
 KarmaServer  = require('karma').Server;
 
 
@@ -21,18 +22,20 @@ host = 'localhost'
 port = 8001
 
 gulp.task 'coffee', () ->
-  gulp.src [srcs.coffee]
+  gulp.src [srcs.coffee ]
     .pipe plumber()
+    .pipe sourcemaps.init()
     .pipe coffee(bare: false)
     .on 'error', (err) ->
         console.log err.stack
     .pipe rename (file) ->
         file.basename = 'app'
-    .pipe gulp.dest base + '/'
+    .pipe gulp.dest base
     .pipe uglify()
     .pipe rename (file) ->
         file.basename += '.min'
-    .pipe gulp.dest base + '/'
+    .pipe sourcemaps.write base
+    .pipe gulp.dest base
 
 
 gulp.task 'karma',['coffee'], (done) ->

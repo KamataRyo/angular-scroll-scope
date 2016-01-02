@@ -2,7 +2,7 @@
 .idea
 .project
 *.log
-
+*.map
 node_modules/
 coverage/
 app.js
