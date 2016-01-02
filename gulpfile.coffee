@@ -60,5 +60,5 @@ gulp.task 'watch', () ->
   gulp.watch watching, ['coffee','karma', 'reload']
 
 
-gulp.task 'default', ['coffee','karma']
+gulp.task 'default', ['coffee']
 gulp.task 'dev', ['coffee','karma','connect', 'watch' ]
