@@ -1,3 +1,5 @@
-describe 'test', () ->
-    it 'should be that true is true', () ->
+describe 'angular-scroll-scope directive', () ->
+    beforeEach module('myApp', 'index.html')
+
+    it 'should be attribute directive', () ->
         expect(true).toEqual true
