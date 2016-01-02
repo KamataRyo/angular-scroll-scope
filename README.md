@@ -99,4 +99,6 @@ myScrollScope.unbind();
 
 ## Credits
 
-initiated by [Jerry Jäppinen](http://eiskis.net/) (under [MIT](https://github.com/Eiskis/scroll-scope/blob/master/LICENSE)).
+Original jquery plugin was initiated by [Jerry Jäppinen](http://eiskis.net/) (under [MIT](https://github.com/Eiskis/scroll-scope/blob/master/LICENSE)).
+
+Ported by [KamataRyo](https://github.com/KamataRyo)(under)[MIT](https://github.com/KamataRyo/angular-scroll-scope/blob/master/LICENSE).
