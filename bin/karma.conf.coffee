@@ -10,6 +10,7 @@ module.exports = (config) ->
     frameworks: ['jasmine']
     # list of files / patterns to load in the browser
     files: [
+      'lib/angular/angular.js'
     　'coffee/**/*.coffee'
       'spec/**/*.spec.coffee'
     ]

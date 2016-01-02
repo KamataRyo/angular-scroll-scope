@@ -1,0 +1,21 @@
+{
+  "name": "angular-scroll-scope",
+  "description": "Small angularJS module to keep parent element still when scrolling an element to its boundary.",
+  "main": "app.js",
+  "authors": [
+    "KamataRyo"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/KamataRyo/angular-scroll-scope",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.4.8"
+  }
+}
