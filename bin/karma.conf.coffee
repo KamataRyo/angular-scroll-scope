@@ -4,13 +4,14 @@
 module.exports = (config) ->
   config.set {
     # base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: ''
+    basePath: '..'
     # frameworks to use
     # available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['jasmine']
     # list of files / patterns to load in the browser
     files: [
-      '../spec/**/*.spec.coffee'
+    　'coffee/**/*.coffee'
+      'spec/**/*.spec.coffee'
     ]
     # list of files to exclude
     exclude: [
@@ -18,13 +19,25 @@ module.exports = (config) ->
     # preprocess matching files before serving them to the browser
     # available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors:
-      '../coffee/**/*.coffee': ['coffee']
-      '../spec/**/*.spec.coffee': ['coffee']
+      'coffee/**/*.coffee': ['coffee','coverage']
+      'spec/**/*.spec.coffee': ['coffee']
 
     # test results reporter to use
     # possible values: 'dots', 'progress'
     # available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress']
+    reporters: ['progress','coverage']
+    coverageReporter: {
+        reporters: [
+            {
+                type: 'lcov'
+                dir: 'coverage/'
+            }
+            {
+                type : 'html'
+                dirma: 'coverage/'
+            }
+        ]
+    }
     # web server port
     port: 9876
     # enable / disable colors in the output (reporters and logs)

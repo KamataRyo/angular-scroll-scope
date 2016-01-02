@@ -1,2 +1,2 @@
 'use strict'
-app = angular.module 'app'
+console.log 1

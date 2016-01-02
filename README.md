@@ -1,5 +1,9 @@
 
-# *scroll-scope.js*
+# *angular-scroll-scope.js*
+
+[![Build Status Images](https://travis-ci.org/KamataRyo/angular-scroll-scope.svg)](https://travis-ci.org/KamataRyo/angular-scroll-scope)
+[![codecov.io](https://codecov.io/github/KamataRyo/angular-scroll-scope/coverage.svg?branch=master)](https://codecov.io/github/KamataRyo/angular-scroll-scope?branch=master)
+
 
 Small angularJS module to **keep parent element still when scrolling an element to its boundary**.
 
@@ -95,4 +99,4 @@ myScrollScope.unbind();
 
 ## Credits
 
-Plugin by [Jerry Jäppinen](http://eiskis.net/) (under [MIT](https://github.com/Eiskis/scroll-scope/blob/master/LICENSE)).
+initiated by [Jerry Jäppinen](http://eiskis.net/) (under [MIT](https://github.com/Eiskis/scroll-scope/blob/master/LICENSE)).

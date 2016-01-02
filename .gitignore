@@ -4,5 +4,6 @@
 *.log
 
 node_modules/
+coverage/
 app.js
 app.min.js
