@@ -17,6 +17,8 @@
   ],
   "devDependencies": {
     "angular": "~1.4.8",
-    "angular-mocks": "~1.4.8"
+    "angular-mocks": "~1.4.8",
+    "jquery": "~2.1.4",
+    "scroll-scope": "~0.1.0"
   }
 }

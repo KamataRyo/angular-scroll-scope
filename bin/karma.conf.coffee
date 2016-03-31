@@ -12,7 +12,7 @@ module.exports = (config) ->
     files: [
       'lib/angular/angular.js'
       'lib/angular-mocks/angular-mocks.js'
-    　'coffee/**/*.coffee'
+      'coffee/**/*.coffee'
       'spec/**/*.spec.coffee'
     ]
     # list of files to exclude
@@ -23,6 +23,10 @@ module.exports = (config) ->
     preprocessors:
       'coffee/**/*.coffee': ['coffee','coverage']
       'spec/**/*.spec.coffee': ['coffee']
+    coffeePreprocessor:
+        options:
+            bare: true
+            sourceMap: true
 
     # test results reporter to use
     # possible values: 'dots', 'progress'
@@ -51,7 +55,8 @@ module.exports = (config) ->
     autoWatch: true
     # start these browsers
     # available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome', 'Firefox', 'Safari', 'PhantomJS']
+    browsers: ['Chrome']
+    # browsers: ['Chrome', 'Firefox', 'Safari', 'PhantomJS']
     # Continuous Integration mode
     # if true, Karma captures browsers, runs the tests and exits
     singleRun: true
